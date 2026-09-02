@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanzy Candles — Handpoured, Slow-Burning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero{
+    position:relative; min-height:100svh; display:flex; align-items:center; justify-content:center;
+    text-align:center; padding:120px 6vw 80px;
+    background:
+      radial-gradient(60% 50% at 50% 22%, rgba(201,160,106,0.16), transparent 70%),
+      radial-gradient(120% 90% at 50% 100%, var(--pine) 0%, var(--pine-deep) 55%);
+    overflow:hidden;
+  }
+  .hero-glow{
+    position:absolute; left:50%; top:34%; width:520px; height:520px; transform:translate(-50%,-50%);
+    background:radial-gradient(circle, rgba(217,121,63,0.28) 0%, rgba(217,121,63,0) 68%);
+    filter:blur(10px); animation:flicker 6s ease-in-out infinite; pointer-events:none;
+  }
+  @keyframes flicker{
+    0%,100%{opacity:0.75; transform:translate(-50%,-50%) scale(1);}
+    35%{opacity:0.95; transform:translate(-51%,-49%) scale(1.05);}
+    60%{opacity:0.65; transform:translate(-49%,-51%) scale(0.97);}
+    80%{opacity:0.9; transform:translate(-50%,-50%) scale(1.02);}
+  }
+  .hero-mark{width:150px; margin:0 auto 20px; animation:rise 1.4s cubic-bezier(.19,1,.22,1) both;}
+  .hero-eyebrow{font-size:0.78rem; letter-spacing:0.28em; color:var(--gold-soft); opacity:0; animation:rise 1s cubic-bezier(.19,1,.22,1) 0.15s both;}
+  .hero h1{font-size:clamp(3rem, 9vw, 6.4rem); line-height:0.98; margin:14px 0 22px; color:var(--ivory); opacity:0; animation:rise 1.2s cubic-bezier(.19,1,.22,1) 0.3s both;}
+  .hero h1 em{font-style:italic; color:var(--gold);}
+  .hero p{max-width:480px; margin:0 auto 40px; font-size:1.05rem; line-height:1.7; color:var(--cream); opacity:0.85; animation:rise 1.2s cubic-bezier(.19,1,.22,1) 0.45s both;}
+  .hero-ctas{display:flex; gap:18px; justify-content:center; flex-wrap:wrap; animation:rise 1.2s cubic-bezier(.19,1,.22,1) 0.6s both;}
+  @keyframes rise{from{opacity:0; transform:translateY(26px);} to{opacity:1; transform:translateY(0);}}
+  .scroll-cue{position:absolute; bottom:34px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:8px; font-size:0.68rem; letter-spacing:0.2em; color:var(--cream); opacity:0.55;}
+  .scroll-cue .line{width:1px; height:34px; background:linear-gradient(var(--gold), transparent); animation:draw 2.2s ease-in-out infinite;}
+  @keyframes draw{0%{transform:scaleY(0); transform-origin:top;} 50%{transform:scaleY(1); transform-origin:top;} 50.1%{transform-origin:bottom;} 100%{transform:scaleY(0); transform-origin:bottom;}}
+  .home-story-visual{position:relative; aspect-ratio:4/5; border-radius:2px; overflow:hidden; background:linear-gradient(160deg, var(--pine-light), var(--pine-deep)); display:flex; align-items:center; justify-content:center;}
+  .home-story-visual .ring{position:absolute; border:1px solid var(--line); border-radius:50%;}
+  .home-story-visual .ring.r1{width:70%; aspect-ratio:1; animation:spin 60s linear infinite;}
+  .home-story-visual .ring.r2{width:92%; aspect-ratio:1; animation:spin 90s linear infinite reverse;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .home-story-visual svg{width:42%; position:relative; z-index:2;}
+  .collection-head{display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap;}
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav id="nav">
+  <div class="brand">
+    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a"/></svg>
+    TANZY
+  </div>
+  <div class="navlinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="navcta" href="shop.html">Shop Candles</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div style="position:relative; z-index:2;">
+    <svg class="hero-mark" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 10 L118 55 Q145 38 175 52 Q150 82 100 88 Q50 82 25 52 Q55 38 82 55 Z" fill="#c9a06a"/>
+    </svg>
+    <div class="hero-eyebrow">HANDPOURED IN SMALL BATCHES</div>
+    <h1>Light finds its <em>quiet</em><br>in the smallest flame</h1>
+    <p>Tanzy Candles are hand-poured with natural soy wax and slow-burning wicks — made in small batches so every one arrives exactly as it left our table.</p>
+    <div class="hero-ctas">
+      <a href="shop.html" class="btn-solid">Explore the Collection</a>
+      <a href="about.html" class="btn-outline">Our Story</a>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><div class="line"></div></div>
+</section>
+
+<section class="story" id="story">
+  <div class="home-story-visual">
+    <div class="ring r1"></div>
+    <div class="ring r2"></div>
+    <svg viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 10 L118 55 Q145 38 175 52 Q150 82 100 88 Q50 82 25 52 Q55 38 82 55 Z" fill="#c9a06a"/>
+    </svg>
+  </div>
+  <div class="story-copy">
+    <div class="kicker">OUR STORY</div>
+    <h2 class="display" style="font-size:clamp(2rem,3.6vw,2.8rem);">Started on a kitchen counter, still made the same way</h2>
+    <p>Tanzy began the way most good things do — with too much time, a saucepan, and a stubborn belief that candles from a big-box shelf never smelled like anything at all.</p>
+    <div class="story-stats">
+      <div class="stat"><b>100%</b><span>Natural soy wax</span></div>
+      <div class="stat"><b>40+</b><span>Hour burn time</span></div>
+      <div class="stat"><b>0</b><span>Synthetic dyes</span></div>
+    </div>
+    <div style="margin-top:36px;"><a href="about.html" class="btn-outline">Read the full story</a></div>
+  </div>
+</section>
+
+<section class="collection" id="collection">
+  <div class="collection-head">
+    <div class="section-head">
+      <div class="kicker">THE COLLECTION</div>
+      <h2>Scents worth slowing down for</h2>
+    </div>
+    <a href="shop.html" class="btn-outline">View all candles</a>
+  </div>
+  <div class="shop-grid" id="home-grid" style="margin-top:60px;"></div>
+</section>
+
+<div class="strip">
+  <div class="strip-track">
+    <span>SOY WAX</span><span>COTTON WICKS</span><span>HAND POURED</span><span>SMALL BATCH</span><span>NO SYNTHETIC DYE</span>
+    <span>SOY WAX</span><span>COTTON WICKS</span><span>HAND POURED</span><span>SMALL BATCH</span><span>NO SYNTHETIC DYE</span>
+  </div>
+</div>
+
+<section class="testimonial">
+  <q>"I lit the Monsoon Earth candle the evening it arrived and completely forgot I was sitting in my own living room. It smells like the first rain, exactly."</q>
+  <cite>— Ananya R., repeat customer</cite>
+</section>
+
+<footer id="contact">
+  <div class="footer-cta">
+    <h2>Bring a little quiet<br>into your room.</h2>
+    <div class="footer-form">
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Email address">
+      <a href="contact.html" class="btn-solid" style="text-align:center; margin-top:10px;">Notify me of new scents</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-brand">TANZY CANDLES</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">Story</a>
+    </div>
+    <div class="footer-links" style="opacity:0.5;">© 2026 Tanzy Candles</div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  const grid = document.getElementById('home-grid');
+  PRODUCTS.slice(0,3).forEach(p => {
+    grid.innerHTML += `
+      <a class="pcard" href="product.html?slug=${p.slug}">
+        <div class="pimg"><img src="https://picsum.photos/seed/${p.seed}/700/880" alt="${p.name} candle"></div>
+        <div class="pinfo">
+          <h3>${p.name}</h3>
+          <span class="scent">${p.notes}</span>
+          <div class="prow">
+            <span class="price">₹${p.price}</span>
+            <span class="addbtn">View</span>
+          </div>
+        </div>
+      </a>`;
+  });
+</script>
+</body>
+</html>

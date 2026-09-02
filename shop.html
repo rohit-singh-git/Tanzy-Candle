@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Tanzy Candles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<nav id="nav" class="solid">
+  <div class="brand">
+    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a"/></svg>
+    TANZY
+  </div>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a class="navcta" href="shop.html">Shop Candles</a>
+</nav>
+
+<div class="pagehead">
+  <div class="kicker">THE COLLECTION</div>
+  <h1>Every scent we pour</h1>
+  <p>Six candles, all hand-poured in small batches with natural soy wax. Filter by mood to find the one for your room.</p>
+</div>
+
+<section style="padding-top:0;">
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-f="all">All</button>
+    <button class="filter-btn" data-f="woody">Woody & Grounded</button>
+    <button class="filter-btn" data-f="floral">Floral & Fresh</button>
+    <button class="filter-btn" data-f="spiced">Warm & Spiced</button>
+  </div>
+  <div class="shop-grid" id="shop-grid"></div>
+</section>
+
+<footer>
+  <div class="footer-cta">
+    <h2>Not sure where<br>to start?</h2>
+    <div class="footer-form">
+      <p style="color:var(--cream); opacity:0.8; line-height:1.7; margin-bottom:14px;">Tell us what kind of spaces you're lighting and we'll suggest a scent.</p>
+      <a href="contact.html" class="btn-solid" style="text-align:center;">Ask us for a recommendation</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-brand">TANZY CANDLES</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">Story</a>
+    </div>
+    <div class="footer-links" style="opacity:0.5;">© 2026 Tanzy Candles</div>
+  </div>
+</footer>
+
+<script src="products.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  const MOODS = {
+    "amber-root":"woody", "monsoon-earth":"woody",
+    "fig-rain":"floral", "midnight-lotus":"floral",
+    "golden-marigold":"spiced", "chai-ember":"spiced"
+  };
+
+  const grid = document.getElementById('shop-grid');
+  function render(filter){
+    grid.innerHTML = "";
+    PRODUCTS
+      .filter(p => filter === "all" || MOODS[p.slug] === filter)
+      .forEach(p => {
+        grid.innerHTML += `
+          <a class="pcard" href="product.html?slug=${p.slug}">
+            <div class="pimg"><img src="https://picsum.photos/seed/${p.seed}/700/880" alt="${p.name} candle"></div>
+            <div class="pinfo">
+              <h3>${p.name}</h3>
+              <span class="scent">${p.notes}</span>
+              <div class="prow">
+                <span class="price">₹${p.price}</span>
+                <span class="addbtn">View</span>
+              </div>
+            </div>
+          </a>`;
+      });
+  }
+  render("all");
+
+  document.getElementById('filters').addEventListener('click', e => {
+    if(!e.target.classList.contains('filter-btn')) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    e.target.classList.add('active');
+    render(e.target.dataset.f);
+  });
+</script>
+</body>
+</html>

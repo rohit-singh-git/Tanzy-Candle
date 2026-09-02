@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Tanzy Candles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<nav id="nav" class="solid">
+  <div class="brand">
+    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a"/></svg>
+    TANZY
+  </div>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">Our Story</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+  <a class="navcta" href="shop.html">Shop Candles</a>
+</nav>
+
+<div class="pagehead">
+  <div class="kicker">GET IN TOUCH</div>
+  <h1>Say hello</h1>
+  <p>Questions about a scent, a bulk order, or a gift box? Send us a note — we read every one ourselves.</p>
+</div>
+
+<section style="padding-top:0;">
+  <div class="contact-wrap">
+    <form class="contact-form" id="contact-form">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" placeholder="Your full name" required>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com" required>
+      </div>
+      <div class="field">
+        <label>Subject</label>
+        <input type="text" placeholder="What's this about?">
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Tell us a bit more..." required></textarea>
+      </div>
+      <button type="submit" class="btn-solid" style="width:fit-content;">Send Message</button>
+      <div class="form-success" id="form-success">Thanks — we'll get back to you within a day.</div>
+    </form>
+
+    <div class="contact-info">
+      <div class="info-block">
+        <span>EMAIL</span>
+        <b>hello@tanzycandles.com</b>
+      </div>
+      <div class="info-block">
+        <span>INSTAGRAM</span>
+        <b><a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">@tanzy_candle</a></b>
+      </div>
+      <div class="info-block">
+        <span>RESPONSE TIME</span>
+        <b>Within 24 hours, most days sooner</b>
+      </div>
+      <div class="info-block">
+        <span>BULK & GIFTING</span>
+        <b>Custom scent sets available for weddings and events</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-cta">
+    <h2>Bring a little quiet<br>into your room.</h2>
+    <div class="footer-form">
+      <a href="shop.html" class="btn-solid" style="text-align:center;">Browse the collection</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-brand">TANZY CANDLES</div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">Story</a>
+    </div>
+    <div class="footer-links" style="opacity:0.5;">© 2026 Tanzy Candles</div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  document.getElementById('contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const msg = document.getElementById('form-success');
+    msg.classList.add('show');
+    this.reset();
+  });
+</script>
+</body>
+</html>
