@@ -1,79 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product — Tanzy Candles</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product — Tanzy Candles</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="canonical" href="https://rohit-singh-git.github.io/Tanzy-Candle/product.html" />
+    <meta name="description"
+        content="Shop handpoured scented candles by Tanzy Candles — soy wax, small-batch, made in India." />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Product — Tanzy Candles" />
+    <meta property="og:description"
+        content="Shop handpoured scented candles by Tanzy Candles — soy wax, small-batch, made in India." />
+    <meta property="og:url" content="https://rohit-singh-git.github.io/Tanzy-Candle/product.html" />
+    <meta property="og:image"
+        content="https://rohit-singh-git.github.io/Tanzy-Candle/images/Mango-cheesecake-bliss-Candle/1.jpeg" />
+    <meta property="og:site_name" content="Tanzy Candles" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Product — Tanzy Candles" />
+    <meta name="twitter:description"
+        content="Shop handpoured scented candles by Tanzy Candles — soy wax, small-batch, made in India." />
+    <meta name="twitter:image"
+        content="https://rohit-singh-git.github.io/Tanzy-Candle/images/Mango-cheesecake-bliss-Candle/1.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<div class="grain"></div>
+    <div class="grain"></div>
 
-<nav id="nav" class="solid">
-  <div class="brand">
-    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a"/></svg>
-    TANZY
-  </div>
-  <div class="navlinks">
-    <a href="index.html">Home</a>
-    <a href="shop.html" class="active">Shop</a>
-    <a href="about.html">Our Story</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a class="navcta" href="shop.html">Shop Candles</a>
-</nav>
+    <nav id="nav" class="solid">
+        <a href="/index.html">
 
-<div id="product-root"></div>
+            <div class="brand">
+                <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a" />
+                </svg>
+                TANZY
+            </div>
+        </a>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a class="navcta" href="shop.html">Shop Candles</a>
+    </nav>
 
-<section class="related" id="related-wrap">
-  <div class="section-head" style="margin:0 auto;">
-    <div class="kicker">YOU MIGHT ALSO LIKE</div>
-    <h2>More from the collection</h2>
-  </div>
-  <div class="shop-grid" id="related-grid" style="margin-top:44px;"></div>
-</section>
+    <div id="product-root"></div>
 
-<footer>
-  <div class="footer-cta">
-    <h2>Bring a little quiet<br>into your room.</h2>
-    <div class="footer-form">
-      <input type="text" placeholder="Your name">
-      <input type="email" placeholder="Email address">
-      <a href="contact.html" class="btn-solid" style="text-align:center; margin-top:10px;">Notify me of new scents</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-brand">TANZY CANDLES</div>
-    <div class="footer-links">
-      <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">Story</a>
-    </div>
-    <div class="footer-links" style="opacity:0.5;">© 2026 Tanzy Candles</div>
-  </div>
-</footer>
+    <section class="related" id="related-wrap">
+        <div class="section-head" style="margin: 0 auto">
+            <div class="kicker">YOU MIGHT ALSO LIKE</div>
+            <h2>More from the collection</h2>
+        </div>
+        <div class="shop-grid" id="related-grid" style="margin-top: 44px"></div>
+    </section>
 
-<script src="products.js"></script>
-<script>
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+    <footer>
+        <div class="footer-cta">
+            <h2>Bring a little quiet<br />into your room.</h2>
+            <div class="footer-form">
+                <input type="text" placeholder="Your name" />
+                <input type="email" placeholder="Email address" />
+                <a href="contact.html" class="btn-solid" style="text-align: center; margin-top: 10px">Notify me of new
+                    scents</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">TANZY CANDLES</div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">Story</a>
+            </div>
+            <div class="footer-links" style="opacity: 0.5">
+                © 2026 Tanzy Candles
+            </div>
+        </div>
+    </footer>
 
-  const params = new URLSearchParams(window.location.search);
-  const slug = params.get('slug') || PRODUCTS[0].slug;
-  const p = PRODUCTS.find(x => x.slug === slug) || PRODUCTS[0];
+    <script src="products.js"></script>
+    <script>
+        const nav = document.getElementById("nav");
+        window.addEventListener("scroll", () =>
+            nav.classList.toggle("scrolled", window.scrollY > 40),
+        );
 
-  document.title = p.name + " — Tanzy Candles";
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get("slug") || PRODUCTS[0].slug;
+        const p = PRODUCTS.find((x) => x.slug === slug) || PRODUCTS[0];
 
-  document.getElementById('product-root').innerHTML = `
+        document.title = p.name + " — Tanzy Candles";
+
+        document.getElementById("product-root").innerHTML = `
     <div class="product-view">
       <div class="product-gallery">
-        <div class="main"><img id="main-img" src="https://picsum.photos/seed/${p.seed}/900/1120" alt="${p.name} candle"></div>
+        <div class="main"><img id="main-img" src="${p.images[0]}" alt="${p.name} candle" onerror="this.src='https://picsum.photos/seed/${p.seed}/900/1120'"></div>
         <div class="thumbs">
-          <img src="https://picsum.photos/seed/${p.seed}-a/200/200" onclick="document.getElementById('main-img').src=this.src.replace('200/200','900/1120')">
-          <img src="https://picsum.photos/seed/${p.seed}-b/200/200" onclick="document.getElementById('main-img').src=this.src.replace('200/200','900/1120')">
-          <img src="https://picsum.photos/seed/${p.seed}-c/200/200" onclick="document.getElementById('main-img').src=this.src.replace('200/200','900/1120')">
+          ${p.images.map(img => `<img src="${img}" onerror="this.src='https://picsum.photos/seed/${p.seed}/200/200'" onclick="document.getElementById('main-img').src=this.src">`).join("")}
         </div>
       </div>
       <div class="product-info">
@@ -101,30 +134,38 @@
             <span id="qty">1</span>
             <button onclick="changeQty(1)">+</button>
           </div>
-          <button class="btn-solid" onclick="addToCart()">Add to Cart</button>
+          <button class="btn-solid" onclick="orderOnWhatsApp()">Order on WhatsApp</button>
         </div>
-        <div class="added-msg" id="added-msg">Added to cart.</div>
       </div>
     </div>
   `;
 
-  let qty = 1;
-  function changeQty(d){
-    qty = Math.max(1, qty + d);
-    document.getElementById('qty').textContent = qty;
-  }
-  function addToCart(){
-    const msg = document.getElementById('added-msg');
-    msg.textContent = `Added ${qty} × ${p.name} to cart.`;
-    msg.classList.add('show');
-    setTimeout(() => msg.classList.remove('show'), 2600);
-  }
+        let qty = 1;
+        function changeQty(d) {
+            qty = Math.max(1, qty + d);
+            document.getElementById("qty").textContent = qty;
+        }
+        const WHATSAPP_NUMBER = "919759317357";
+        function orderOnWhatsApp() {
+            const total = p.price * qty;
+            const text =
+                `Hi Tanzy Candles! I'd like to order:\n\n` +
+                `Product: ${p.name}\n` +
+                `Price: ₹${p.price} each\n` +
+                `Quantity: ${qty}\n` +
+                `Total: ₹${total}\n\n` +
+                `Link: ${window.location.href}`;
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+            window.open(url, "_blank");
+        }
 
-  const relGrid = document.getElementById('related-grid');
-  PRODUCTS.filter(x => x.slug !== p.slug).slice(0,3).forEach(r => {
-    relGrid.innerHTML += `
+        const relGrid = document.getElementById("related-grid");
+        PRODUCTS.filter((x) => x.slug !== p.slug)
+            .slice(0, 3)
+            .forEach((r) => {
+                relGrid.innerHTML += `
       <a class="pcard" href="product.html?slug=${r.slug}">
-        <div class="pimg"><img src="https://picsum.photos/seed/${r.seed}/700/880" alt="${r.name} candle"></div>
+        <div class="pimg"><img src="${r.images[0]}" alt="${r.name} candle" onerror="this.src='https://picsum.photos/seed/${r.seed}/700/880'"></div>
         <div class="pinfo">
           <h3>${r.name}</h3>
           <span class="scent">${r.notes}</span>
@@ -134,7 +175,8 @@
           </div>
         </div>
       </a>`;
-  });
-</script>
+            });
+    </script>
 </body>
+
 </html>

@@ -1,85 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop — Tanzy Candles</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Tanzy Candles</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="canonical" href="https://rohit-singh-git.github.io/Tanzy-Candle/shop.html" />
+    <meta name="description"
+        content="Browse handpoured scented candles by Tanzy Candles — floral, spiced and gourmand fragrances. Soy wax candles crafted in small batches." />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shop — Tanzy Candles" />
+    <meta property="og:description"
+        content="Browse handpoured scented candles by Tanzy Candles — floral, spiced and gourmand fragrances. Soy wax candles crafted in small batches." />
+    <meta property="og:url" content="https://rohit-singh-git.github.io/Tanzy-Candle/shop.html" />
+    <meta property="og:image"
+        content="https://rohit-singh-git.github.io/Tanzy-Candle/images/Mango-cheesecake-bliss-Candle/1.jpeg" />
+    <meta property="og:site_name" content="Tanzy Candles" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shop — Tanzy Candles" />
+    <meta name="twitter:description"
+        content="Browse handpoured scented candles by Tanzy Candles — floral, spiced and gourmand fragrances. Soy wax candles crafted in small batches." />
+    <meta name="twitter:image"
+        content="https://rohit-singh-git.github.io/Tanzy-Candle/images/Mango-cheesecake-bliss-Candle/1.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<div class="grain"></div>
+    <div class="grain"></div>
 
-<nav id="nav" class="solid">
-  <div class="brand">
-    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a"/></svg>
-    TANZY
-  </div>
-  <div class="navlinks">
-    <a href="index.html">Home</a>
-    <a href="shop.html" class="active">Shop</a>
-    <a href="about.html">Our Story</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a class="navcta" href="shop.html">Shop Candles</a>
-</nav>
+    <nav id="nav" class="solid">
+        <a href="/index.html">
 
-<div class="pagehead">
-  <div class="kicker">THE COLLECTION</div>
-  <h1>Every scent we pour</h1>
-  <p>Six candles, all hand-poured in small batches with natural soy wax. Filter by mood to find the one for your room.</p>
-</div>
+            <div class="brand">
+                <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 5 L60 30 Q75 20 90 28 Q75 45 50 45 Q25 45 10 28 Q25 20 40 30 Z" fill="#c9a06a" />
+                </svg>
+                TANZY
+            </div>
+        </a>
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="about.html">Our Story</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a class="navcta" href="shop.html">Shop Candles</a>
+    </nav>
 
-<section style="padding-top:0;">
-  <div class="filters" id="filters">
-    <button class="filter-btn active" data-f="all">All</button>
-    <button class="filter-btn" data-f="woody">Woody & Grounded</button>
-    <button class="filter-btn" data-f="floral">Floral & Fresh</button>
-    <button class="filter-btn" data-f="spiced">Warm & Spiced</button>
-  </div>
-  <div class="shop-grid" id="shop-grid"></div>
-</section>
-
-<footer>
-  <div class="footer-cta">
-    <h2>Not sure where<br>to start?</h2>
-    <div class="footer-form">
-      <p style="color:var(--cream); opacity:0.8; line-height:1.7; margin-bottom:14px;">Tell us what kind of spaces you're lighting and we'll suggest a scent.</p>
-      <a href="contact.html" class="btn-solid" style="text-align:center;">Ask us for a recommendation</a>
+    <div class="pagehead">
+        <div class="kicker">THE COLLECTION</div>
+        <h1>Every scent we pour</h1>
+        <p>
+            Six candles, all hand-poured in small batches with natural soy
+            wax. Filter by mood to find the one for your room.
+        </p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-brand">TANZY CANDLES</div>
-    <div class="footer-links">
-      <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">Story</a>
-    </div>
-    <div class="footer-links" style="opacity:0.5;">© 2026 Tanzy Candles</div>
-  </div>
-</footer>
 
-<script src="products.js"></script>
-<script>
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+    <section style="padding-top: 0">
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-f="all">All</button>
+            <button class="filter-btn" data-f="floral">
+                Floral & Fresh
+            </button>
+            <button class="filter-btn" data-f="spiced">
+                Warm & Spiced
+            </button>
+        </div>
+        <div class="shop-grid" id="shop-grid"></div>
+    </section>
 
-  const MOODS = {
-    "amber-root":"woody", "monsoon-earth":"woody",
-    "fig-rain":"floral", "midnight-lotus":"floral",
-    "golden-marigold":"spiced", "chai-ember":"spiced"
-  };
+    <footer>
+        <div class="footer-cta">
+            <h2>Not sure where<br />to start?</h2>
+            <div class="footer-form">
+                <p style="
+                            color: var(--cream);
+                            opacity: 0.8;
+                            line-height: 1.7;
+                            margin-bottom: 14px;
+                        ">
+                    Tell us what kind of spaces you're lighting and we'll
+                    suggest a scent.
+                </p>
+                <a href="contact.html" class="btn-solid" style="text-align: center">Ask us for a recommendation</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">TANZY CANDLES</div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/tanzy_candle/" target="_blank" rel="noopener">Instagram</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">Story</a>
+            </div>
+            <div class="footer-links" style="opacity: 0.5">
+                © 2026 Tanzy Candles
+            </div>
+        </div>
+    </footer>
 
-  const grid = document.getElementById('shop-grid');
-  function render(filter){
-    grid.innerHTML = "";
-    PRODUCTS
-      .filter(p => filter === "all" || MOODS[p.slug] === filter)
-      .forEach(p => {
-        grid.innerHTML += `
+    <script src="products.js"></script>
+    <script>
+        const nav = document.getElementById("nav");
+        window.addEventListener("scroll", () =>
+            nav.classList.toggle("scrolled", window.scrollY > 40),
+        );
+
+        const MOODS = {
+            "mango-cheesecake-bliss": "spiced",
+            "laddu-candle": "spiced",
+            "golden-bloom-candle": "floral",
+            "pearl-luxe-candle": "floral",
+            "peony-flower-candle": "floral",
+            "pillar-candle": "spiced",
+            "love-letter-message-candle": "spiced",
+            "daisy-luxe-candle": "floral",
+            "floral-daisy-flower-urli": "floral",
+            "floral-daisy-flower-urli-candle": "floral",
+            "candle-bouquet": "floral",
+            "daisy-flower-candle": "floral",
+        };
+
+        const grid = document.getElementById("shop-grid");
+        function render(filter) {
+            grid.innerHTML = "";
+            PRODUCTS.filter(
+                (p) => filter === "all" || MOODS[p.slug] === filter,
+            ).forEach((p) => {
+                grid.innerHTML += `
           <a class="pcard" href="product.html?slug=${p.slug}">
-            <div class="pimg"><img src="https://picsum.photos/seed/${p.seed}/700/880" alt="${p.name} candle"></div>
+            <div class="pimg"><img src="${p.images[0]}" alt="${p.name} candle" onerror="this.src='https://picsum.photos/seed/${p.seed}/700/880'"></div>
             <div class="pinfo">
               <h3>${p.name}</h3>
               <span class="scent">${p.notes}</span>
@@ -89,16 +146,21 @@
               </div>
             </div>
           </a>`;
-      });
-  }
-  render("all");
+            });
+        }
+        render("all");
 
-  document.getElementById('filters').addEventListener('click', e => {
-    if(!e.target.classList.contains('filter-btn')) return;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    e.target.classList.add('active');
-    render(e.target.dataset.f);
-  });
-</script>
+        document
+            .getElementById("filters")
+            .addEventListener("click", (e) => {
+                if (!e.target.classList.contains("filter-btn")) return;
+                document
+                    .querySelectorAll(".filter-btn")
+                    .forEach((b) => b.classList.remove("active"));
+                e.target.classList.add("active");
+                render(e.target.dataset.f);
+            });
+    </script>
 </body>
+
 </html>

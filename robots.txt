@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rohit-singh-git.github.io/Tanzy-Candle/sitemap.xml
