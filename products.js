@@ -200,10 +200,10 @@ const PRODUCTS = [
             base: "Soft Warm Finish",
         },
         images: [
-            "./images/Floral-daisy-flower urli/1.jpeg",
-            "./images/Floral-daisy-flower urli/2.jpeg",
-            "./images/Floral-daisy-flower urli/3.jpeg",
-            "./images/Floral-daisy-flower urli/4.jpeg",
+            "./images/Floral-daisy-flower-urli/1.jpeg",
+            "./images/Floral-daisy-flower-urli/2.jpeg",
+            "./images/Floral-daisy-flower-urli/3.jpeg",
+            "./images/Floral-daisy-flower-urli/4.jpeg",
         ],
     },
     {
